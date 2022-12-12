@@ -1,0 +1,59 @@
+load pixelImg.ppm pix
+darken 85 pix pixx
+save PNGDarken.png pixx
+
+load pixelImgPNG.png pix
+brighten 65 pix pixx
+save BMPBrighten.bmp pixx
+
+load pixelImgBMP.bmp pix
+flip-horizontal pix pixx
+save PPMHori.ppm pixx
+
+load pixelImgPNG.png pix
+flip-vertical pix pixx
+save PPMVert.ppm pixx
+
+load pixelImgBMP.bmp pix
+greyscale-red pix pixx
+save PPMRedGreyscale.ppm pixx
+
+load pixelImg.ppm pix
+greyscale-green pix pixx
+save PPMGreenGreyscale.ppm pixx
+
+load pixelImgPNG.png pix
+greyscale-blue pix pixx
+save BMPBlueGreyscale.bmp pixx
+
+load pixelImgBMP.bmp pix
+luma pix pixx
+save BMPLuma.bmp pixx
+
+load pixelImgBMP.bmp pix
+intensity pix pixx
+save PPMIntensity.ppm pixx
+
+load pixelImgPNG.png pix
+value pix pixx
+save PNGValue.png pixx
+
+load pixelImg.ppm pix
+blur pix pixx
+save BMPBlur.bmp pixx
+
+load pixelImg.ppm pix
+sharpen pix pixx
+save PNGSharpen.png pixx
+
+load pixelImgPNG.png pix
+sepia pix pixx
+save BMPSepia.bmp pixx
+
+load pixelImgPNG.png pix
+grayscale-transformation pix pixx
+save PPMGrayscaleTrans.ppm pixx
+
+load exampleImgSepia.bmp pix
+downscale 300 100 pix pixx
+save stairsDownscaleImg.bmp pixx
